@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [mainSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="General(failed)">
+    <groups>
+      <run>
+        <include name="Arithmetic"/>
+        <include name="Trigonometric"/>
+        <include name="Logic"/>
+        <include name="DivisionByZero"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.epam.atl2019cw10.testNG.IsNegativeLongTest">
+        <methods>
+          <include name="isNegativeLongTest" invocation-numbers="0 1 2 3 4 5 6 7"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.IsNegativeLongTest -->
+      <class name="com.epam.atl2019cw10.testNG.MultLongTypesTest">
+        <methods>
+          <include name="multLongTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.MultLongTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.DivDoubleTypesTest">
+        <methods>
+          <include name="divDoubleTypesTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DivDoubleTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.SubLongTypesTest">
+        <methods>
+          <include name="subLongTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.SubLongTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.DivisionByZeroDoubleTypesTest">
+        <methods>
+          <include name="divisionByZeroDoubleTypesTest" invocation-numbers="0 1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DivisionByZeroDoubleTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.IsPositiveLongTest">
+        <methods>
+          <include name="isPositiveLongTest" invocation-numbers="0 1 2 3 4 5 6 7"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.IsPositiveLongTest -->
+      <class name="com.epam.atl2019cw10.testNG.DivLongTypesTest">
+        <methods>
+          <include name="divLongTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DivLongTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.DoubleSinTest">
+        <methods>
+          <include name="doubleSinTest" invocation-numbers="0 1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DoubleSinTest -->
+      <class name="com.epam.atl2019cw10.testNG.DoubleCosTest">
+        <methods>
+          <include name="doubleCosTest" invocation-numbers="0 1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DoubleCosTest -->
+      <class name="com.epam.atl2019cw10.testNG.DoubleCtgTest">
+        <methods>
+          <include name="doubleTgTest" invocation-numbers="0 1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DoubleCtgTest -->
+      <class name="com.epam.atl2019cw10.testNG.DoubleSqrtTest">
+        <methods>
+          <include name="doubleSqrtTest" invocation-numbers="0 1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DoubleSqrtTest -->
+      <class name="com.epam.atl2019cw10.testNG.DoublePowTest">
+        <methods>
+          <include name="doublePowTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DoublePowTest -->
+      <class name="com.epam.atl2019cw10.testNG.DoubleTgTest">
+        <methods>
+          <include name="doubleTgTest" invocation-numbers="0 1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DoubleTgTest -->
+      <class name="com.epam.atl2019cw10.testNG.SubDoubleTypesTest">
+        <methods>
+          <include name="subDoubleTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.SubDoubleTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.DivisionByZeroLongTypesTest">
+        <methods>
+          <include name="divLongTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.DivisionByZeroLongTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.MultDoubleTypesTest">
+        <methods>
+          <include name="multDoubleTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.MultDoubleTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.SumDoubleTypesTest">
+        <methods>
+          <include name="sumDoubleTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.SumDoubleTypesTest -->
+      <class name="com.epam.atl2019cw10.testNG.SumLongTypesTest">
+        <methods>
+          <include name="sumLongTest" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
+        </methods>
+      </class> <!-- com.epam.atl2019cw10.testNG.SumLongTypesTest -->
+    </classes>
+  </test> <!-- General(failed) -->
+</suite> <!-- Failed suite [mainSuite] -->

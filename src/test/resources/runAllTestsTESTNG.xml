@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator App Test Automation Suite" parallel="classes" thread-count="4">
+
+    <test name="generalSuite">
+
+<groups>
+    <run>
+        <include name="logic"/>
+        <include name="arithmetic"/>
+        <include name="trigonometric"/>
+        <include name="trigonometric"/>
+        <include name="divisionByZero"/>
+    </run>
+</groups>
+
+        <classes>
+            <class name="com.epam.atl2019cw10.testNG.BaseTestClass"/>
+            <class name="com.epam.atl2019cw10.testNG.DivDoubleTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DivisionByZeroDoubleTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DivisionByZeroLongTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DivLongTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DoubleCosTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DoubleCtgTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DoublePowTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DoubleSinTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DoubleSqrtTest"/>
+            <class name="com.epam.atl2019cw10.testNG.DoubleTgTest"/>
+            <class name="com.epam.atl2019cw10.testNG.IsNegativeLongTest"/>
+            <class name="com.epam.atl2019cw10.testNG.IsPositiveLongTest"/>
+            <class name="com.epam.atl2019cw10.testNG.MultDoubleTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.MultLongTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.SubDoubleTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.SubLongTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.SumDoubleTypesTest"/>
+            <class name="com.epam.atl2019cw10.testNG.SumLongTypesTest"/>
+        </classes>
+    </test>
+</suite>
