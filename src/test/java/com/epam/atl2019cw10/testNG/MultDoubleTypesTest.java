@@ -10,7 +10,7 @@ public class MultDoubleTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValues",groups={"arithmetic"})
     public void multDoubleTest (double firstValue, double secondValue) {
-        Assert.assertEquals(calculator.mult(firstValue,secondValue),(firstValue*secondValue));
+        Assert.assertEquals((firstValue*secondValue),calculator.mult(firstValue,secondValue));
     }
 
     @AfterClass

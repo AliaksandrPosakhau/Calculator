@@ -11,7 +11,7 @@ public class DoubleCtgTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValue",groups={"trigonometric"})
     public void doubleTgTest (double value) {
-        Assert.assertEquals(calculator.ctg(value), 1/Math.tan(value));
+        Assert.assertEquals(1/Math.tan(value),calculator.ctg(value));
         //Assert.assertEquals(1/Math.tan(value),(Math.cos(value)/Math.sin(value))); - NOT EQUAL ANYWAY! CALCULATION ERROR!
     }
 

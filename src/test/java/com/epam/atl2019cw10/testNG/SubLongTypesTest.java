@@ -11,7 +11,7 @@ public class SubLongTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "longTypeValues",groups={"arithmetic"})
     public void subLongTest (long firstValue, long secondValue) {
-        Assert.assertEquals(calculator.sub(firstValue,secondValue),(firstValue-secondValue));
+        Assert.assertEquals((firstValue-secondValue),calculator.sub(firstValue,secondValue));
     }
     @AfterClass
     public void tearDown() {

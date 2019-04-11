@@ -11,7 +11,7 @@ public class DivDoubleTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValuesWithoutZeroDenominator",groups={"arithmetic"})
     public void divDoubleTypesTest (double firstValue, double secondValue) {
-        Assert.assertEquals(calculator.div(firstValue, secondValue), (firstValue / secondValue));
+        Assert.assertEquals((firstValue / secondValue),calculator.div(firstValue, secondValue));
     }
 
     @AfterClass

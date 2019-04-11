@@ -11,7 +11,7 @@ public class MultLongTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "longTypeValues",groups={"arithmetic"})
     public void multLongTest (long firstValue, long secondValue) {
-        Assert.assertEquals(calculator.mult(firstValue,secondValue),(firstValue*secondValue));
+        Assert.assertEquals((firstValue*secondValue),calculator.mult(firstValue,secondValue));
     }
 
     @AfterClass

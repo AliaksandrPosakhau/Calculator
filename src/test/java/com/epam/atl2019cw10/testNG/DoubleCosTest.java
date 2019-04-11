@@ -11,7 +11,7 @@ public class DoubleCosTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValue",groups={"trigonometric"})
     public void doubleCosTest (double value) {
-        Assert.assertEquals(calculator.cos(value), Math.cos(value));
+        Assert.assertEquals(Math.cos(value),calculator.cos(value));
     }
 
     @AfterClass

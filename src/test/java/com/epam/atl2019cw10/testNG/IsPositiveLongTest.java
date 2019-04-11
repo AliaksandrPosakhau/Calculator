@@ -13,6 +13,6 @@ public class IsPositiveLongTest extends BaseTestClass {
     @Test(dataProvider = "longTypeValue",groups={"logic"})
     public void isPositiveLongTest (long value) {
         calculator = new Calculator();
-        Assert.assertEquals(calculator.isPositive(value),(value>0)?true:false);
+        Assert.assertEquals((value>0)?true:false,calculator.isPositive(value));
     }
 }

@@ -10,6 +10,6 @@ public class IsNegativeLongTest extends BaseTestClass {
 
     @Test(dataProvider = "longTypeValue",groups={"logic"})
     public void isNegativeLongTest (long value) {
-        Assert.assertEquals(calculator.isNegative(value),((value<0)?true:false));
+        Assert.assertEquals(((value<0)?true:false),calculator.isNegative(value));
     }
 }

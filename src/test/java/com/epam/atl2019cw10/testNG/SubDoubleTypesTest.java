@@ -11,7 +11,7 @@ public class SubDoubleTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValues",groups={"arithmetic"})
     public void subDoubleTest (double firstValue, double secondValue) {
-        Assert.assertEquals(calculator.sub(firstValue,secondValue),(firstValue-secondValue));
+        Assert.assertEquals((firstValue-secondValue),calculator.sub(firstValue,secondValue));
     }
 
     @AfterClass

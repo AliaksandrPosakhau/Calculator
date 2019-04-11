@@ -11,7 +11,7 @@ public class DoublePowTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValues",groups={"arithmetic"})
     public void doublePowTest (double firstValue, double secondValue) {
-        Assert.assertEquals(calculator.pow(firstValue,secondValue),(Math.pow(firstValue,secondValue)));
+        Assert.assertEquals((Math.pow(firstValue,secondValue)),calculator.pow(firstValue,secondValue));
     }
 
     @AfterClass

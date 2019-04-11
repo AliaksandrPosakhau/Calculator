@@ -1,38 +1,26 @@
 package com.epam.atl2019cw10.testNG;
-
-import com.epam.tat.module4.Calculator;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
 public class BaseTestClass {
 
-    protected Calculator calculator;
-
-    @BeforeTest()
-    public void setUp() {
-        calculator = new Calculator();
-    }
-
     @DataProvider(name="longTypeValues")
     public Object[][] valuesLong() {
         return new Object[][]{
-                {1,1},   //1
-                {-1,-1}, //2
-                {0,0},   //3
-                {-5,5},  //4
-                {5,-5},  //5
-                {5,-5},  //6
-                {0,-5},  //7
-                {0,5},   //8
-                {6,0},   //9
-                {-5,0},  //10
-                {0,-5},  //11
-                {Long.MAX_VALUE,Long.MIN_VALUE}, //12
-                {Long.MAX_VALUE,Long.MAX_VALUE}, //13
-                {Long.MIN_VALUE,Long.MIN_VALUE}, //14
-                {Long.MIN_VALUE,Long.MAX_VALUE}, //15
+                {1,1},
+                {-1,-1},
+                {0,0},
+                {-5,5},
+                {5,-5},
+                {5,-5},
+                {0,-5},
+                {0,5},
+                {6,0},
+                {-5,0},
+                {0,-5},
+                {Long.MAX_VALUE,Long.MIN_VALUE},
+                {Long.MAX_VALUE,Long.MAX_VALUE},
+                {Long.MIN_VALUE,Long.MIN_VALUE},
+                {Long.MIN_VALUE,Long.MAX_VALUE},
         };
     }
 
@@ -53,27 +41,27 @@ public class BaseTestClass {
     @DataProvider(name="longTypeValuesWithoutZeroDenominator")
     public Object[][] longTypeValuesWithoutZeroDenominator() {
         return new Object[][]{
-                {1,1},   //1
-                {-1,-1}, //2
-                {-5,5},  //3
-                {5,-5},  //4
-                {5,-5},  //5
-                {0,-5},  //6
-                {0,5},   //7
-                {0,-5},  //8
-                {Long.MAX_VALUE,Long.MIN_VALUE}, //9
-                {Long.MAX_VALUE,Long.MAX_VALUE}, //10
-                {Long.MIN_VALUE,Long.MIN_VALUE}, //11
-                {Long.MIN_VALUE,Long.MAX_VALUE}, //12
+                {1,1},
+                {-1,-1},
+                {-5,5},
+                {5,-5},
+                {5,-5},
+                {0,-5},
+                {0,5},
+                {0,-5},
+                {Long.MAX_VALUE,Long.MIN_VALUE},
+                {Long.MAX_VALUE,Long.MAX_VALUE},
+                {Long.MIN_VALUE,Long.MIN_VALUE},
+                {Long.MIN_VALUE,Long.MAX_VALUE},
         };
     }
 
     @DataProvider(name="longTypeValuesZeroDivisionDenominator")
     public Object[][] longTypeValuesZeroDivisionDenominator() {
         return new Object[][]{
-                {1,0},  //1
-                {-1,0}, //2
-                {0,0},  //3
+                {1,0},
+                {-1,0},
+                {0,0},
         };
     }
 
@@ -167,8 +155,4 @@ public class BaseTestClass {
         };
     }
 
-    @AfterClass
-    public void tearDown() {
-        calculator = null;
-    }
 }

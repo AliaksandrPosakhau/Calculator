@@ -11,7 +11,7 @@ public class DivisionByZeroDoubleTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValuesWithZeroDenominator",expectedExceptions=IllegalArgumentException.class,groups={"divisionByZero"})
     public void divisionByZeroDoubleTypesTest (double firstValue, double secondValue) {
-        Assert.assertEquals(calculator.div(firstValue, secondValue), (firstValue / secondValue));
+        Assert.assertEquals((firstValue / secondValue),calculator.div(firstValue, secondValue));
     }
 
     @AfterClass

@@ -11,7 +11,7 @@ public class SumDoubleTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValues",groups={"arithmetic"})
     public void sumDoubleTest (double firstValue, double secondValue) {
-        Assert.assertEquals(calculator.sum(firstValue,secondValue),(firstValue+secondValue));
+        Assert.assertEquals((firstValue+secondValue),calculator.sum(firstValue,secondValue));
     }
 
     @AfterClass

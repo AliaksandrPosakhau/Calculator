@@ -11,7 +11,7 @@ public class DoubleSqrtTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValue",groups={"arithmetic"})
     public void doubleSqrtTest (double value) {
-        Assert.assertEquals(calculator.sqrt(value),(Math.sqrt(value)));
+        Assert.assertEquals((Math.sqrt(value)),calculator.sqrt(value));
     }
 
     @AfterClass

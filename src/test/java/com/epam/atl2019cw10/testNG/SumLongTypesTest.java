@@ -10,10 +10,10 @@ public class SumLongTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "longTypeValues",groups={"arithmetic"})
     public void sumLongTest (long firstValue, long secondValue) {
-        Assert.assertEquals(calculator.sum(firstValue,secondValue),(firstValue+secondValue));
+        Assert.assertEquals((firstValue+secondValue),calculator.sum(firstValue,secondValue));
     }
 
-    @AfterClass
+    @AfterTest
     public void tearDown() {
         calculator = null;
     }

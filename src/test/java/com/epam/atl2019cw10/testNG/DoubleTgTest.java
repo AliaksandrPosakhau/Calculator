@@ -11,7 +11,7 @@ public class DoubleTgTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValue",groups={"trigonometric"})
     public void doubleTgTest (double value) {
-        Assert.assertEquals(calculator.tg(value), Math.tan(value));
+        Assert.assertEquals(Math.tan(value),calculator.tg(value));
     }
 
     @AfterClass

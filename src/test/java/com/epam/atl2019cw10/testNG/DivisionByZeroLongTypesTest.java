@@ -11,7 +11,7 @@ public class DivisionByZeroLongTypesTest extends BaseTestClass {
 
     @Test(expectedExceptions=NumberFormatException.class,dataProvider = "longTypeValuesZeroDivisionDenominator",groups={"divisionByZero"})
     public void divLongTest (long firstValue, long secondValue) {
-        Assert.assertEquals(calculator.div(firstValue, secondValue), (firstValue / secondValue));
+        Assert.assertEquals((firstValue / secondValue),calculator.div(firstValue, secondValue));
     }
 
     @AfterClass

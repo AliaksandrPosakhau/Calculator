@@ -11,7 +11,7 @@ public class DivLongTypesTest extends BaseTestClass {
 
     @Test(dataProvider = "longTypeValuesWithoutZeroDenominator",groups={"arithmetic"})
     public void divLongTest (long firstValue, long secondValue) {
-        Assert.assertEquals(calculator.div(firstValue,secondValue),(firstValue/secondValue));
+        Assert.assertEquals((firstValue/secondValue),calculator.div(firstValue,secondValue));
     }
 
     @AfterClass

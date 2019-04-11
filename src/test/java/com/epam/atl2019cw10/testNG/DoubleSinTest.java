@@ -11,7 +11,7 @@ public class DoubleSinTest extends BaseTestClass {
 
     @Test(dataProvider = "doubleTypeValue",groups={"trigonometric"})
     public void doubleSinTest (double value) {
-        Assert.assertEquals(calculator.sin(value), Math.sin(value));
+        Assert.assertEquals(Math.sin(value),calculator.sin(value));
     }
 
     @AfterClass
